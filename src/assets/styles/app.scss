@@ -59,3 +59,7 @@ p {
     margin: 0;
     padding: 8px 0;
 }
+
+main {
+    min-height: calc(100vh - 61px);
+}

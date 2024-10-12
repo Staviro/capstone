@@ -7,7 +7,7 @@ const Footer = function() {
         <footer className='footer'>
             <Container>
                 <div className='footer-logo'>
-                    <img width={240} src={require('../../../assets/images/Logo.png')}></img>
+                    <img alt='logo' width={240} src={require('../../../assets/images/Logo.png')}></img>
                 </div>
                 <div className='footer-section footer-links'>
                     <h3>Links</h3>

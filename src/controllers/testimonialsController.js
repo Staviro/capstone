@@ -19,31 +19,31 @@ const testimonialsController = {
             stars: 3
         },
         {
-            id: 1,
+            id: 4,
             username: "Lora Allure",
             text: "Velit dapibus varius sit porttitor adipiscing.",
             stars: 5
         },
         {
-            id: 1,
+            id: 5,
             username: "Herrmani M",
             text: "Hac commodo scelerisque quam adipiscing erat.",
             stars: 5
         },
         {
-            id: 1,
+            id: 6,
             username: "Paul P",
             text: "Finibus accumsan inceptos justo integer ultrices placerat arcu.",
             stars: 4
         },
         {
-            id: 1,
+            id: 7,
             username: "Gerald",
             text: "Malesuada mus sagittis tortor integer gravida adipiscing.",
             stars: 4
         },
         {
-            id: 1,
+            id: 8,
             username: "Beni Ben",
             text: "Magna eget cursus, elit mattis ultrices gravida.",
             stars: 5

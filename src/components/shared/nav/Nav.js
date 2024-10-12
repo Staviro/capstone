@@ -13,7 +13,7 @@ const Nav = function() {
         <Container>
             <div className='nav-container'>
                 <Link to="/">
-                    <img src={require('../../../assets/images/Logo.png')} height="24"></img>
+                    <img alt="logo" src={require('../../../assets/images/Logo.png')} height="24"></img>
                 </Link>
                 <nav>
                     <ul>

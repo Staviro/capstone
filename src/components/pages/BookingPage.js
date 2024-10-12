@@ -2,40 +2,65 @@
 import BookingForm from "../blocks/bookingForm/BookingForm";
 
 //modules
-import { useState, useReducer } from "react";
+import { useEffect, useReducer, useState } from "react";
+import { fetchAPI, submitAPI } from "../../api/API";
+import { useNavigate } from "react-router-dom";
 
 const reducer = function(state, action) {
     if (action.type == "update_times") {
-        return updateTimes(state);
+        return updateTimes(state, action.value);
+    } else if (action.type == "update_form_response") {
+        return {
+            ...state,
+            formResponse: action.value
+        };
     }
     return state;
 }
 
-const updateTimes = function(state) {
-    console.log("updateTimes: ", state);
-    return state;
+const updateTimes = function(state, date) {
+    let newTimes = fetchAPI(new Date(date));
+    return {
+        ...state,
+        availableTimes: newTimes
+    };
 }
 
 const initialTimes = function() {
-    return [
-        "17:00",
-        "18:00",
-        "19:00",
-        "20:00",
-        "21:00",
-        "22:00",
-    ]
+    let newTimes = fetchAPI(new Date());
+    return newTimes;
 }
 
 const BookingPage = function() {
     const initialState = {
-        availableTimes : initialTimes()
+        availableTimes : initialTimes(),
+        formResponse: null
     }
+    const navigate = useNavigate();
     const [state, dispatch] = useReducer(reducer, initialState);
+
+    const submitForm = function(formData) {
+        const response = submitAPI(formData);
+        dispatch({type: "update_form_response", value: response})
+    }
+
+    useEffect(function() {
+        if (state.formResponse != null)
+        if (state.formResponse ) {
+            navigate("/confirmedbooking");
+        } else {
+            alert("Failed");
+        }
+    },[state])
+
 
     return (
         <>
-            <BookingForm data={state} dispatch={dispatch} ></BookingForm>
+            <BookingForm 
+            data={state} 
+            submitForm={submitForm}
+            availableTimes={state.availableTimes} 
+            dispatch={dispatch} ></BookingForm>
         </>
     )
 }

@@ -10,6 +10,7 @@ import BookingPage from './components/pages/BookingPage';
 
 //Modules
 import { Routes, Route } from 'react-router-dom';
+import ConfirmedBooking from './components/pages/ConfirmedBooking';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         <Routes>
           <Route path='/' element={<HomePage/>}></Route>
           <Route path='/booking' element={<BookingPage/>}></Route>
+          <Route path='/confirmedbooking' element={<ConfirmedBooking></ConfirmedBooking>}></Route>
         </Routes>
       </Main>
       <Footer>

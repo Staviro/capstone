@@ -34,9 +34,13 @@ input, select, textarea, input[type="date"] {
             outline-color: red;
         }
     }
-
 }
 
 .text-red {
+    color: red;
+}
+
+.input-error {
+    text-align: end;
     color: red;
 }
