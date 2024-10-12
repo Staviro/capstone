@@ -21,6 +21,13 @@
             border-radius: 12px;
             height: 164px;
             background-color: rgba(black, 10%);
+
+            img {
+                object-position: center;
+                object-fit: cover;
+                width: 100%;
+                border-radius: 12px;
+            }
         }
     }
 

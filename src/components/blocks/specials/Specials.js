@@ -11,7 +11,6 @@ const Specials = function(props) {
         return <SpecialCard data={item} key={item.id}></SpecialCard>
     }) 
     : <h3>We currently do not have specials at the moment...<br/> Please check again later</h3>
-    console.log(props)
     return(
         <section>
             <Container>

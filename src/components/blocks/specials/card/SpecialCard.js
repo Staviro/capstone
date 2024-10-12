@@ -5,10 +5,10 @@ import './special-card.css';
 import Button from "../../button/Button";
 
 const SpecialCard = function(props) {
-    console.log(props)
     return (
         <div className="special-card">
             <div className="special-card-img-container">
+                <img height={156} src={props.data?.image}></img>
             </div>
             <div className="special-card-body">
                 <h3>{props.data?.name}</h3>
