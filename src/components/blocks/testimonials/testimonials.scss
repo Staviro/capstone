@@ -1,0 +1,10 @@
+.testimonials {
+    &-list {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 16px;
+        padding: 16px 0;
+    }
+}
+
+@import './testimonials-responsive';

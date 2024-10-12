@@ -1,24 +1,32 @@
 //styles
 import './nav.css';
 
+//components
+import Container from '../../blocks/container/Container';
+
+//modules
+import React from 'react';
+import { Link } from 'react-router-dom';
+
 const Nav = function() {
     return (
-        <div className='nav-container'>
-            <img src={require('../../../assets/images/Logo.png')} height="24"></img>
-            <nav>
-                <ul>
-                    <li>
-                        <a href='/'>Link</a>
-                    </li>
-                    <li>
-                        <a href='/'>Link</a>
-                    </li>
-                    <li>
-                        <a href='/'>Link</a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
+        <Container>
+            <div className='nav-container'>
+                <Link to="/">
+                    <img src={require('../../../assets/images/Logo.png')} height="24"></img>
+                </Link>
+                <nav>
+                    <ul>
+                        <li>
+                            <Link to={'/'}>Home</Link>
+                        </li>
+                        <li>
+                            <Link to={'/booking'}>Booking</Link>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </Container>
     )
 }
 

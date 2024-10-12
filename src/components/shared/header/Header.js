@@ -1,7 +1,7 @@
-const Header = function({ children }) {
+const Header = function(props) {
     return (
-        <header>
-            { children }
+        <header className={props.style}>
+            { props.children }
         </header>
     )
 }

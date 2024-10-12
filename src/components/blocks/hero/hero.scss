@@ -1,0 +1,14 @@
+@import '../../../assets/styles/shared/variables';
+
+.hero {
+    padding: 32px 16px;
+    background-color: $color-primary;
+
+    h1 {
+        color: white;
+    }
+
+    p {
+        color: white;
+    }
+}

@@ -1,0 +1,36 @@
+@import '../../../../assets/styles/shared/variables';
+
+.testimonial-card {
+    padding: 16px;
+    border: 1px solid #ddd;
+    border-radius: 16px;
+    cursor: pointer;
+    transition: all 150ms;
+
+    &:hover {
+        background-color: $color-primary;
+        color: whitesmoke;
+
+        .testimonial-card-star {
+            transform: translateY(-8px);
+        }
+    }
+
+    &-star {
+        transition: all 150ms;
+        display: flex;
+        align-items: center;
+        background-color: $color-primary;
+        gap: 8px;
+        width: fit-content;
+        padding: 4px 12px;
+        border-radius: 24px;
+        color: white;
+        box-shadow: 0 4px 8px rgba(black, 15%);
+
+        img {
+            filter: invert(1);
+            display: flex;
+        }
+    }
+}

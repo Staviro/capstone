@@ -1,0 +1,31 @@
+.testimonial-card {
+  padding: 16px;
+  border: 1px solid #ddd;
+  border-radius: 16px;
+  cursor: pointer;
+  transition: all 150ms;
+}
+.testimonial-card:hover {
+  background-color: #495E57;
+  color: whitesmoke;
+}
+.testimonial-card:hover .testimonial-card-star {
+  transform: translateY(-8px);
+}
+.testimonial-card-star {
+  transition: all 150ms;
+  display: flex;
+  align-items: center;
+  background-color: #495E57;
+  gap: 8px;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 4px 12px;
+  border-radius: 24px;
+  color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+.testimonial-card-star img {
+  filter: invert(1);
+  display: flex;
+}/*# sourceMappingURL=testimonial-card.css.map */

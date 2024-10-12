@@ -1,7 +1,7 @@
-const Main = function() {
+const Main = function({ children }) {
     return (
         <main>
-            <p>Main</p>
+            { children }
         </main>
     )
 }

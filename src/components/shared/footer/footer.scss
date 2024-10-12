@@ -1,4 +1,49 @@
 .footer {
     border-top: 1px solid #ddd;
     padding: 16px;
+    text-align: center;
+
+    &-logo {
+        text-align: center;
+        img {
+            margin: auto;
+        }
+    }
+
+    .footer-links {
+        ul {
+            display: flex;
+            flex-wrap: wrap;
+            list-style: none;
+            justify-content: center;
+            margin: 0;
+            padding: 8px 0;
+    
+            a {
+                color: black;
+                text-decoration: none;
+                padding: 8px 12px;
+                border-radius: 4px;
+    
+                &:hover {
+                    background-color: rgba(black, 10%);
+                }
+    
+                &:visited {
+                    color: blue;
+                }
+            }
+        }
+    }
+
+    .footer-contact {
+        ul {
+            display: flex;
+            margin: 0;
+            padding: 8px;
+            gap: 32px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+    }
 }

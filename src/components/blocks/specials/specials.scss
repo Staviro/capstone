@@ -1,0 +1,13 @@
+.specials {
+    &-container {
+        padding: 32px 0;
+    }
+
+    &-list {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+}
+
+@import './specials.responsive';
