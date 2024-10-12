@@ -1,0 +1,22 @@
+.nav {
+    &-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 16px;
+        border-bottom: 1px solid #ddd;
+
+        ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            display: flex;
+            gap: 8px;
+            align-items: center;
+
+            li {
+                padding: 4px 12px;
+            }
+        }
+    }
+}
